@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Javascript Advanced</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <span class="navbar-brand text-light" href="#"><b>Assignments</b></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="">Javascript Advanced</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <b>Status</b>
+                            </a>
+                            <ul class="dropdown-menu bg-info">
+                                <li><button class="dropdown-item text-success" onclick="active()">Active</button></li>
+                                <li><button class="dropdown-item text-warning" onclick="inactive()">Inactive</button>
+                                </li>
+                                <li><button class="dropdown-item text-danger" onclick="deleted()">Deleted</button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-grow-1">
+        <div id="button-section" class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h3>Output / Result</h3>
+                        <div class="border border-dark rounded col-12 text-center pt-4" id="output"></div>
+                        <div class="col-12 text-center">
+                            <button class="btn border border-dark my-4 py-2 text-center" onclick="clearOutput()">Clear
+                                Output</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer style="background-image: linear-gradient(to right,#ee0979,#ff6a00 );">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <p class="mb-0 text-center text-light py-1">&copy; 2023 Assignment By
+                        <strong>Muhammad Sulaiman</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
