@@ -29,10 +29,6 @@ const deletedUsers = users.filter((user, id)=>{
 function showUsers(showTable) {
     users.push(showTable)
     showToast("A new user has been successfully added", "success");
-    if (!showTable.length) {
-       showToast("There is not a single user available", "error")
-       return
-   }
 
    let startingCode = '<div class="table-responsive"><table class="table table-hover">'
    let headCode = '<thead><tr><th scope="col">#</th><th scope="col">Full Name</th><th scope="col">Country</th><th scope="col">City</th><th scope="col">Age</th><th scope="col">Status</th><th scope="col">Id</th></tr></thead>'
